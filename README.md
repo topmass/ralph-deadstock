@@ -38,26 +38,21 @@ sudo pacman -S jq
 
 ## Installation
 
-1. Clone this repo:
+1. Clone this repo wherever you keep your code:
 ```bash
-git clone https://github.com/topmass/ralph-deadstock ~/Code/ralph-deadstock
+git clone https://github.com/topmass/ralph-deadstock
 ```
 
-2. Add an alias to your shell config:
+2. Add an alias to your shell config (call it whatever you want):
 
-**bash** (`~/.bashrc`):
+**bash** (`~/.bashrc`) / **zsh** (`~/.zshrc`):
 ```bash
-alias ralph="$HOME/Code/ralph-deadstock/ralph.sh"
-```
-
-**zsh** (`~/.zshrc`):
-```bash
-alias ralph="$HOME/Code/ralph-deadstock/ralph.sh"
+alias ralph="<path-to>/ralph-deadstock/ralph.sh"
 ```
 
 **fish** (`~/.config/fish/config.fish`):
 ```fish
-alias ralph="$HOME/Code/ralph-deadstock/ralph.sh"
+alias ralph "<path-to>/ralph-deadstock/ralph.sh"
 ```
 
 3. Reload your shell:
