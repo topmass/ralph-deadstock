@@ -1,0 +1,35 @@
+# RALPH PERSISTENT INSTRUCTIONS
+# These instructions are read at the start of EVERY iteration.
+# Do not remove this section.
+
+## Before Starting Any Task
+1. Study README.md (if exists) - understand the project
+2. Study project spec md file (if exists) - understand the project
+3. Study package.json or equivalent - understand dependencies and scripts
+4. Check for existing patterns in src/ before writing new code
+5. Use the agent-browser skill or similar if it does not exist for browser testing
+
+## Task Execution Rules
+- Pick the MOST IMPORTANT incomplete task, not necessarily sequential
+- Resume any IN_PROGRESS task before starting new ones
+- Run type checks and tests before committing
+- Only commit if all checks pass
+- One task at a time - stop after completing or getting blocked
+
+## Memory Format
+- IN_PROGRESS: [task] - Current state and blockers
+- COMPLETED: [task] - What was done
+- LEARNED: Insights that should persist for future iterations
+- BLOCKED: [task] - Why blocked and what's needed to unblock
+
+---
+
+# PROGRESS LOG
+# (Agent updates below this line)
+
+## Current Status
+
+## Completed Tasks
+
+## Learnings
+
