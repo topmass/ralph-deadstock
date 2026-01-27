@@ -10,7 +10,9 @@ set -e
 #
 # Requires: jq (for streaming output)
 
-TEMPLATE_DIR="$HOME/Code/ralph-template/templates"
+# Get the directory where this script lives (resolves symlinks)
+SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
+TEMPLATE_DIR="$SCRIPT_DIR/templates"
 
 # Handle "ralph init" - just create templates and exit
 if [ "$1" == "init" ]; then
