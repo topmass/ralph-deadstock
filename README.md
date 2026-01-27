@@ -25,40 +25,52 @@ Ralph runs Claude Code in a loop, completing tasks from your PRD one at a time u
 - [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code)
 - `jq` (for parsing streaming output)
 
+**macOS:**
 ```bash
-# macOS
 brew install jq
+```
 
-# Ubuntu/Debian
+**Linux (Ubuntu/Debian):**
+```bash
 sudo apt install jq
+```
 
-# Arch
+**Linux (Arch):**
+```bash
 sudo pacman -S jq
 ```
 
 ## Installation
 
-1. Clone this repo wherever you keep your code:
+**1. Clone this repo** wherever you keep your code:
 ```bash
 git clone https://github.com/topmass/ralph-deadstock
 ```
 
-2. Add an alias to your shell config (call it whatever you want):
+**2. Open your shell config:**
+```bash
+# macOS (opens in TextEdit)
+open -e ~/.zshrc
 
-**bash** (`~/.bashrc`) / **zsh** (`~/.zshrc`):
+# Linux
+gedit ~/.bashrc  # or: nano ~/.bashrc
+
+# fish
+open ~/.config/fish/config.fish  # or your preferred editor
+```
+
+**3. Add this line** (change the path and alias name to whatever you want):
 ```bash
 alias ralph="<path-to>/ralph-deadstock/ralph.sh"
 ```
 
-**fish** (`~/.config/fish/config.fish`):
-```fish
-alias ralph "<path-to>/ralph-deadstock/ralph.sh"
+**4. Reload your shell:**
+```bash
+source ~/.zshrc   # macOS
+source ~/.bashrc  # Linux
 ```
 
-3. Reload your shell:
-```bash
-source ~/.bashrc  # or ~/.zshrc
-```
+*Or just add the alias however you normally do it.*
 
 ## Quick Start
 
