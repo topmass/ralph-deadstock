@@ -6,6 +6,8 @@ A dead simple autonomous AI agent loop for Claude Code.
 
 Shoutout to [Matt Pocock](https://x.com/mattpocockuk) for explaining [why the Anthropic Ralph plugin sucks](https://www.aihero.dev/why-the-anthropic-ralph-plugin-sucks).
 
+*TL;DR: The plugin accumulates context across iterations until it bloats and dies. A bash loop starts fresh each turn—just your PRD and progress file. Clean context, every time.*
+
 This is the most bare bones Ralph bash script loop that:
 - **Just works** out of the box
 - **Uses your existing Claude Code skills** — no extra config needed
