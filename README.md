@@ -38,26 +38,26 @@ sudo pacman -S jq
 
 ## Installation
 
-1. Clone this repo somewhere on your machine:
+1. Clone this repo:
 ```bash
-git clone https://github.com/YOUR_USERNAME/ralph-template ~/Code/ralph-template
+git clone https://github.com/topmass/ralph-deadstock ~/Code/ralph-deadstock
 ```
 
 2. Add an alias to your shell config:
 
 **bash** (`~/.bashrc`):
 ```bash
-alias ralph="$HOME/Code/ralph-template/ralph.sh"
+alias ralph="$HOME/Code/ralph-deadstock/ralph.sh"
 ```
 
 **zsh** (`~/.zshrc`):
 ```bash
-alias ralph="$HOME/Code/ralph-template/ralph.sh"
+alias ralph="$HOME/Code/ralph-deadstock/ralph.sh"
 ```
 
 **fish** (`~/.config/fish/config.fish`):
 ```fish
-alias ralph="$HOME/Code/ralph-template/ralph.sh"
+alias ralph="$HOME/Code/ralph-deadstock/ralph.sh"
 ```
 
 3. Reload your shell:
@@ -133,7 +133,7 @@ docker run -it --rm \
 ## Files
 
 ```
-ralph-template/
+ralph-deadstock/
 ├── ralph.sh           # The main script
 ├── templates/
 │   ├── PRD.md         # PRD template
