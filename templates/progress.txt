@@ -4,7 +4,7 @@
 
 ## Before Starting Any Task
 1. Study README.md (if exists) - understand the project
-2. Study project spec md file (if exists) - understand the project
+2. Study project spec md file and PRD md files (if exists) - understand the project
 3. Study package.json or equivalent - understand dependencies and scripts
 4. Check for existing patterns in src/ before writing new code
 5. Use the agent-browser skill or similar if it does not exist for browser testing

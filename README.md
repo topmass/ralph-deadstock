@@ -1,5 +1,7 @@
 # Ralph (Deadstock Edition)
 
+![Ralph](templates/ralphgemi.png)
+
 A dead simple autonomous AI agent loop for Claude Code.
 
 ## Why This Setup?
