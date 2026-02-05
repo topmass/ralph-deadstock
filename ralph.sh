@@ -32,6 +32,25 @@ if [ "$1" == "init" ]; then
     echo "Created progress.txt"
   fi
 
+  # Prompt for claude.md
+  if [ -f ".claude/CLAUDE.md" ]; then
+    echo ".claude/CLAUDE.md already exists, skipping."
+  elif [ -f "$TEMPLATE_DIR/claude.md" ]; then
+    echo ""
+    echo "Add CLAUDE.md with testing & code quality guidelines?"
+    echo "  [1] Yes (recommended)"
+    echo "  [2] No"
+    read -p "Choice [1]: " claude_choice
+    claude_choice=${claude_choice:-1}
+    if [ "$claude_choice" == "1" ]; then
+      mkdir -p .claude
+      cp "$TEMPLATE_DIR/claude.md" ./.claude/CLAUDE.md
+      echo "Created .claude/CLAUDE.md"
+    else
+      echo "Skipped CLAUDE.md"
+    fi
+  fi
+
   echo ""
   echo "Done! Next steps:"
   echo "  1. Edit PRD.md with your project details and tasks"
