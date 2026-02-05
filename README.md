@@ -82,6 +82,8 @@ cd your-project
 ralph init
 ```
 
+This creates `PRD.md`, `progress.txt`, and optionally `.claude/CLAUDE.md` (testing & code quality guidelines).
+
 ### 2. Build Your PRD
 
 Open `PRD.md` and define your project. Pro tip: **use Claude to write it for you in planning mode**:
@@ -146,7 +148,8 @@ ralph-deadstock/
 ├── ralph.sh           # The main script
 ├── templates/
 │   ├── PRD.md         # PRD template
-│   └── progress.txt   # Progress template with persistent instructions
+│   ├── progress.txt   # Progress template with persistent instructions
+│   └── claude.md      # Optional CLAUDE.md with testing guidelines
 └── README.md
 ```
 
